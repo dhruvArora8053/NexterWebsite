@@ -344,7 +344,8 @@ body {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 7rem;
+  grid-column-gap: 7rem;
+  grid-row-gap: 10rem;
 }
 
 .home {
@@ -353,6 +354,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-row-gap: 3.5rem;
+  position: relative;
 }
 
 .home__img {
@@ -404,6 +406,11 @@ body {
   margin-left: 2rem;
 }
 
+.home__area,
+.home__price {
+  margin-bottom: 3.5rem;
+}
+
 .home__location svg,
 .home__rooms svg,
 .home__area svg,
@@ -414,8 +421,11 @@ body {
 }
 
 .home__btn {
-  grid-column: 1/ -1 !important;
+  width: 32.6rem;
   margin-top: 3.5rem;
+  position: absolute;
+  left: 0;
+  bottom: -5.25rem;
 }
 
 .gallery {
